@@ -1,4 +1,4 @@
-# Tutorial 10 (TBROADCAST)
+# Tutorial 10 (BROADCAST)
 Nama: Vina Myrnauli Abigail Siallagan<br>
 NPM: 2206825776<br>
 Kelas: Pemrograman Lanjut - A<br>
@@ -12,3 +12,13 @@ Kelas: Pemrograman Lanjut - A<br>
 * Server dijalankan dengan perintah `cargo run --bin server`. Setiap klien dijalankan dengan perintah `cargo run --bin client`.
 * Setiap klien dan server menerima *broadcast* dari setiap klien lainnya. Ketika klien mengetikkan pesan di baris perintah, *string* tersebut akan dikirimkan ke server.
 * Server akan meneruskan pesan tersebut ke semua klien yang terhubung kepadanya. Dengan begitu, setiap klien akan menerima pesan dari klien lainnya melalui server. Semua pesan yang diketikkan oleh klien akan disebarkan kepada semua klien yang terhubung ke server.
+<br>
+
+###### 2.2. Modifying the websocket port.
+![](images/3.png)  
+![](images/4.png)
+* Ketika port yang digunakan oleh klien dan server adalah sama, aplikasi akan tetap berjalan dengan baik seperti sebelumnya, seperti yang ditunjukkan dalam gambar di atas.
+
+![](images/5.png)  
+![](images/6.png)
+* Jika misalnya hanya satu dari port tersebut yang diubah, seperti port klien, maka akan terjadi kesalahan pada sisi klien karena menurut klien, port tersebut tidak terhubung dan program akan mengalami kegagalan ketika perintah `cargon run --bin client` dijalankan sepertipada gambar di atas.
